@@ -1,203 +1,244 @@
-<!DOCTYPE html>
-<html lang="de">
+<!DOCTYPE html><html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MT Business Solutions - Manuel Tetzlaff</title>
-<style>
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #e8f0ff 0%, #ffffff 100%);
-  margin: 0;
-  padding: 20px;
-  color: #333;
+<title>Manuel Tetzlaff | Vertriebs- & Backoffice-Service</title><style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
 }
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  background: white;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  margin-bottom: 40px;
-  border-bottom: 4px solid #4a90e2;
-  padding-bottom: 20px;
-}
-.header h1 {
-  color: #4a90e2;
-  font-size: 42px;
-  margin: 0;
-  letter-spacing: 2px;
-}
-.contact {
-  text-align: right;
-  color: #4a90e2;
-  font-weight: 600;
-}
-.contact p {
-  margin: 5px 0;
-}
-.profile-img {
-  width: 140px;
-  height: 180px;
-  border-radius: 8px;
-  object-fit: cover;
-  border: 3px solid #4a90e2;
-  margin-top: 10px;
-}
-.section {
-  margin-bottom: 35px;
-}
-.section h2 {
-  color: #4a90e2;
-  border-left: 5px solid #4a90e2;
-  padding-left: 15px;
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-.job {
-  margin-bottom: 20px;
-  padding-left: 10px;
-}
-.job-date {
-  font-weight: bold;
-  color: #2c5aa0;
-}
-.job-title {
-  font-weight: 600;
-  font-size: 17px;
-  margin: 5px 0;
-}
-.job-desc {
-  margin: 5px 0 5px 20px;
-  color: #555;
-  line-height: 1.6;
-}
-.job-desc li {
-  margin: 4px 0;
-}
-.footer {
-  margin-top: 50px;
-  padding-top: 20px;
-  border-top: 2px solid #e0e0e0;
-  text-align: center;
-  color: #777;
-  font-size: 14px;
-}
-@media(max-width: 700px) {
-  .header {flex-direction: column;}
-  .contact {text-align: left; margin-top: 20px;}
-}
-</style>
-</head>
-<body>
-<div class="container">
-  <div class="header">
-    <div>
-      <h1>Lebenslauf</h1>
-      <div class="contact">
-        <p><strong>Manuel Tetzlaff</strong></p>
-        <p>Karlstraße 4</p>
-        <p>35745 Herborn</p>
-        <p>0177 2411776</p>
-        <p>manuel.tetzlaff@gas.de</p>
-        <img src="profil.jpg" alt="Manuel Tetzlaff" class="profile-img">
-      </div>
-    </div>
-  </div>
 
-  <div class="section">
-    <h2>Persönliche Angaben</h2>
-    <p><strong>Geburtstag / -ort:</strong> 04.09.1981 / Marburg</p>
-  </div>
+body{
+background:#f7fafc;
+color:#333;
+line-height:1.6;
+}
 
-  <div class="section">
-    <h2>Mein Werdegang</h2>
-    
-    <div class="job">
-      <div class="job-date">11/2018 bis heute</div>
-      <div class="job-title">Verkäufer im Vertriebsinnendienst, Siegmetall GmbH, Herborn</div>
-      <ul class="job-desc">
-        <li>Technische und schriftliche Beratung von Privat- und Geschäftskunden</li>
-        <li>Angebotserstellung und -verfolgung bis zum Auftrag</li>
-        <li>Neukundengewinnung und Kundenpflege</li>
-      </ul>
-    </div>
+header{
+background:linear-gradient(135deg,#1c8fd1,#4fc3dc);
+color:white;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:40px;
+}
 
-    <div class="job">
-      <div class="job-date">04/2018 – 10/2018</div>
-      <div class="job-title">Weiterbildung zum Handelsfachwirt, Bildungswerk Wetzlar</div>
-    </div>
+.hero{
+max-width:1200px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+flex-wrap:wrap;
+}
 
-    <div class="job">
-      <div class="job-date">02/2014 – 02/2016</div>
-      <div class="job-title">Schulische Weiterbildung, Überonkelung Wetzlar</div>
-    </div>
+.hero-text{
+flex:1;
+animation:fadeInLeft 1.5s ease;
+}
 
-    <div class="job">
-      <div class="job-date">01/2009 – 12/2013</div>
-      <div class="job-title">Selbstständiger Handelsvertreter, Direktvertrieb von Strom-, Gas- und Telefonverträgen</div>
-      <ul class="job-desc">
-        <li>Kaltakquise</li>
-        <li>Kundenberatung und Verkauf</li>
-      </ul>
-    </div>
+.hero-text h1{
+font-size:3rem;
+margin-bottom:15px;
+}
 
-    <div class="job">
-      <div class="job-date">05/2007 – 12/2008</div>
-      <div class="job-title">Mitarbeiter im Verkauf und Holzzuschnitt, Bauhaus, Frankfurt</div>
-      <ul class="job-desc">
-        <li>Kundenberatung und Verkauf</li>
-        <li>Zuschnitt von Holz nach Kundenwunsch</li>
-        <li>Teilnahme an diversen Verkaufsschulungen</li>
-      </ul>
-    </div>
+.hero-text h2{
+font-size:1.3rem;
+font-weight:300;
+margin-bottom:25px;
+}
 
-    <div class="job">
-      <div class="job-date">11/2004 – 10/2006</div>
-      <div class="job-title">Produktionshelfer und Gabelstaplerfahrer, Valentin Furnierwerk, Villmar</div>
-    </div>
+.hero-text p{
+font-size:1.1rem;
+max-width:600px;
+}
 
-    <div class="job">
-      <div class="job-date">10/2003 – 05/2004</div>
-      <div class="job-title">Maschinenführer und Gabelstaplerfahrer, Valentin Holzwerkstoffe, Witzenaar</div>
-    </div>
-  </div>
+.hero-image{
+flex:1;
+display:flex;
+justify-content:center;
+animation:fadeInRight 1.5s ease;
+}
 
-  <div class="section">
-    <h2>Berufliche Aus- und Fortbildung</h2>
-    <div class="job">
-      <div class="job-date">06/2003 – 07/2003</div>
-      <div class="job-title">Fortbildungslehrgang kaufmännischer Bereich, IHK, Herborn</div>
-      <p class="job-desc">Inkl. 4 Wöchiges Praktikum als Verkäufer, P & C, Gießen</p>
-    </div>
-    <div class="job">
-      <div class="job-date">08/1998 – 05/2003</div>
-      <div class="job-title">Ausbildung zum Groß- und Außenhandelskaufmann, Balzer + Nassau, Herborn</div>
-    </div>
-  </div>
+.hero-image img{
+width:320px;
+height:320px;
+object-fit:cover;
+border-radius:50%;
+border:8px solid white;
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
 
-  <div class="section">
-    <h2>Schulische Ausbildung</h2>
-    <div class="job">
-      <div class="job-date">08/1995 – 01/1998</div>
-      <div class="job-title">Hauptschulabschluss, Comenius Schule, Herborn</div>
-    </div>
-  </div>
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 30px;
+background:white;
+color:#1c8fd1;
+font-weight:bold;
+text-decoration:none;
+border-radius:50px;
+transition:0.3s;
+}
 
-  <div class="section">
-    <h2>Qualifikationen</h2>
-    <p>Diverse Verkaufsschulungen und Kommunikationstraining</p>
-  </div>
+.btn:hover{
+transform:translateY(-3px);
+}
 
-  <div class="footer">
-    <p>© 2026 MT Business Solutions | Manuel Tetzlaff | Handelsfachwirt</p>
-  </div>
-</div>
-</body>
+section{
+padding:80px 10%;
+}
+
+h3{
+font-size:2rem;
+color:#1c8fd1;
+margin-bottom:25px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.contact{
+background:#1c8fd1;
+color:white;
+border-radius:20px;
+padding:40px;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+@keyframes fadeInLeft{
+from{
+opacity:0;
+transform:translateX(-50px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+@keyframes fadeInRight{
+from{
+opacity:0;
+transform:translateX(50px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:2.3rem;
+}
+
+.hero-image img{
+width:240px;
+height:240px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+}
+</style></head><body><header><div class="hero"><div class="hero-text"><h1>Manuel Tetzlaff</h1><h2>Vertriebs- & Backoffice-Service</h2><p>
+Professionelle Unterstützung für Unternehmen in den Bereichen
+Vertriebsinnendienst, Kundenbetreuung, Datenerfassung,
+Datenpflege und administrative Dienstleistungen.
+</p><a href="#kontakt" class="btn">
+Kontakt aufnehmen
+</a></div><div class="hero-image"><!-- FOTO EINFÜGEN --><img src="foto.jpg" alt="Manuel Tetzlaff"></div></div></header><section><h3>Meine Leistungen</h3><div class="services"><div class="card">
+<h4>Backoffice-Service</h4>
+<p>
+Unterstützung bei administrativen Aufgaben,
+Dokumentenverwaltung und Büroorganisation.
+</p>
+</div><div class="card">
+<h4>Datenerfassung</h4>
+<p>
+Pflege, Aktualisierung und Strukturierung von
+Kunden- und Unternehmensdaten.
+</p>
+</div><div class="card">
+<h4>Vertriebsinnendienst</h4>
+<p>
+Angebotsverfolgung, Kundenkommunikation,
+Auftragsbearbeitung und Terminvereinbarung.
+</p>
+</div><div class="card">
+<h4>Technischer Vertrieb</h4>
+<p>
+Unterstützung technischer Unternehmen bei
+Kundenbetreuung und Vertriebsprozessen.
+</p>
+</div></div></section><section><div class="about"><div><h3>Über mich</h3><p>
+Mit langjähriger Erfahrung im Vertriebsinnendienst,
+Kundenservice und kaufmännischen Bereich unterstütze ich
+Unternehmen bei administrativen und vertrieblichen Aufgaben.
+</p><br><p>
+Meine Schwerpunkte liegen in der Kundenkommunikation,
+Angebotsbearbeitung, Datenpflege und professionellen
+Backoffice-Prozessen.
+</p></div><div><h3>Erfahrung</h3><p>
+✔ Vertriebsinnendienst</p>
+<p>
+✔ Neukundengewinnung</p>
+<p>
+✔ Kundenbetreuung</p>
+<p>
+✔ Datenerfassung & Datenpflege</p>
+<p>
+✔ Kaufmännische Prozesse</p>
+<p>
+✔ Technischer Vertrieb</p></div></div></section><section id="kontakt"><div class="contact"><h3 style="color:white;">Kontakt</h3><p><strong>Manuel Tetzlaff</strong></p><p>Karlstr. 4</p>
+<p>35745 Herborn</p><br><p>📞 0176 42087636</p>
+<p>✉ manuel.tetzlaff@gmx.de</p></div></section><section><h3>Impressum</h3><p>
+Manuel Tetzlaff<br>
+Karlstr. 4<br>
+35745 Herborn
+</p><br><p>
+Telefon: 0176 42087636<br>
+E-Mail: manuel.tetzlaff@gmx.de
+</p></section><footer><p>
+© 2026 Manuel Tetzlaff – Vertriebs- & Backoffice-Service
+</p></footer></body>
 </html>
