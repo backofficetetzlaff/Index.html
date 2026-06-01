@@ -1,125 +1,192 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manuel Tetzlaff - Lebenslauf</title>
-  <style>
-    body { 
-      font-family: 'Segoe UI', Arial, sans-serif; 
-      max-width: 850px; 
-      margin: 40px auto; 
-      padding: 30px; 
-      line-height: 1.7; 
-      color: #2c3e50; 
-      background: #f8fafc;
-    }
-    h1 { 
-      color: #1e40af; 
-      border-bottom: 4px solid #3b82f6; 
-      padding-bottom: 12px; 
-      margin-bottom: 5px;
-    }
-    h2 { 
-      color: #2563eb; 
-      margin-top: 35px; 
-      border-left: 4px solid #3b82f6;
-      padding-left: 12px;
-    }
-    .header { 
-      display: flex; 
-      gap: 35px; 
-      align-items: center; 
-      flex-wrap: wrap; 
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.07);
-    }
-    .header img { 
-      width: 160px; 
-      height: 160px; 
-      border-radius: 50%; 
-      object-fit: cover; 
-      border: 4px solid #3b82f6; 
-      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-    }
-    .kontakt { 
-      background: #dbeafe; 
-      padding: 18px; 
-      border-radius: 8px; 
-      margin: 15px 0;
-      border-left: 4px solid #3b82f6;
-    }
-    .job { 
-      margin-bottom: 25px; 
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    .datum { 
-      font-weight: bold; 
-      color: #1e40af; 
-      font-size: 15px;
-    }
-    ul { margin: 8px 0; padding-left: 20px; }
-    li { margin: 6px 0; }
-    .section { margin-top: 30px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MT Business Solutions - Manuel Tetzlaff</title>
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e8f0ff 0%, #ffffff 100%);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 40px;
+  border-bottom: 4px solid #4a90e2;
+  padding-bottom: 20px;
+}
+.header h1 {
+  color: #4a90e2;
+  font-size: 42px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.contact {
+  text-align: right;
+  color: #4a90e2;
+  font-weight: 600;
+}
+.contact p {
+  margin: 5px 0;
+}
+.profile-img {
+  width: 140px;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 3px solid #4a90e2;
+  margin-top: 10px;
+}
+.section {
+  margin-bottom: 35px;
+}
+.section h2 {
+  color: #4a90e2;
+  border-left: 5px solid #4a90e2;
+  padding-left: 15px;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.job {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.job-date {
+  font-weight: bold;
+  color: #2c5aa0;
+}
+.job-title {
+  font-weight: 600;
+  font-size: 17px;
+  margin: 5px 0;
+}
+.job-desc {
+  margin: 5px 0 5px 20px;
+  color: #555;
+  line-height: 1.6;
+}
+.job-desc li {
+  margin: 4px 0;
+}
+.footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 2px solid #e0e0e0;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+@media(max-width: 700px) {
+  .header {flex-direction: column;}
+  .contact {text-align: left; margin-top: 20px;}
+}
+</style>
 </head>
 <body>
+<div class="container">
   <div class="header">
-    <img src="foto.jpg" alt="Manuel Tetzlaff">
     <div>
-      <h1>Manuel Tetzlaff</h1>
-      <div class="kontakt">
-        <strong>Adresse:</strong> Karlstraße 4, 35745 Herborn<br>
-        <strong>Telefon:</strong> 0177 241779<br>
-        <strong>E-Mail:</strong> manuel.tetzlaff@gmx.de
+      <h1>Lebenslauf</h1>
+      <div class="contact">
+        <p><strong>Manuel Tetzlaff</strong></p>
+        <p>Karlstraße 4</p>
+        <p>35745 Herborn</p>
+        <p>0177 2411776</p>
+        <p>manuel.tetzlaff@gas.de</p>
+        <img src="profil.jpg" alt="Manuel Tetzlaff" class="profile-img">
       </div>
     </div>
   </div>
 
   <div class="section">
     <h2>Persönliche Angaben</h2>
-    <p><strong>Geburtsdatum / -ort:</strong> 04.09.1981 / Marburg</p>
+    <p><strong>Geburtstag / -ort:</strong> 04.09.1981 / Marburg</p>
   </div>
 
   <div class="section">
-    <h2>Beruflicher Werdegang</h2>
+    <h2>Mein Werdegang</h2>
     
     <div class="job">
-      <p class="datum">11/2018 - heute</p>
-      <strong>Verkäufer im Vertriebsinnendienst</strong><br>
-      Siegmetall GmbH, Wilnsdorf<br>
-      <ul>
-        <li>Technische und kaufmännische Beratung von Privat- und Geschäftskunden</li>
+      <div class="job-date">11/2018 bis heute</div>
+      <div class="job-title">Verkäufer im Vertriebsinnendienst, Siegmetall GmbH, Herborn</div>
+      <ul class="job-desc">
+        <li>Technische und schriftliche Beratung von Privat- und Geschäftskunden</li>
         <li>Angebotserstellung und -verfolgung bis zum Auftrag</li>
         <li>Neukundengewinnung und Kundenpflege</li>
       </ul>
     </div>
 
     <div class="job">
-      <p class="datum">04/2018 - 10/2018</p>
-      <strong>Weiterbildungslehrgang Handelsfachwirt</strong><br>
-      Bildungsinstitut Wetzlar
+      <div class="job-date">04/2018 – 10/2018</div>
+      <div class="job-title">Weiterbildung zum Handelsfachwirt, Bildungswerk Wetzlar</div>
     </div>
 
     <div class="job">
-      <p class="datum">02/2014 - 02/2016</p>
-      <strong>Schulische Weiterbildung</strong><br>
-      Lernzonenpass (Inkassobüro Wetzlar)
+      <div class="job-date">02/2014 – 02/2016</div>
+      <div class="job-title">Schulische Weiterbildung, Überonkelung Wetzlar</div>
     </div>
 
     <div class="job">
-      <p class="datum">01/2009 - 12/2013</p>
-      <strong>Selbstständiger Handelsvertreter</strong><br>
-      Direktvertrieb von Strom-, Gas- und Telefonverträgen<br>
-      <ul>
+      <div class="job-date">01/2009 – 12/2013</div>
+      <div class="job-title">Selbstständiger Handelsvertreter, Direktvertrieb von Strom-, Gas- und Telefonverträgen</div>
+      <ul class="job-desc">
         <li>Kaltakquise</li>
         <li>Kundenberatung und Verkauf</li>
       </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-date">05/2007 – 12/2008</div>
+      <div class="job-title">Mitarbeiter im Verkauf und Holzzuschnitt, Bauhaus, Frankfurt</div>
+      <ul class="job-desc">
+        <li>Kundenberatung und Verkauf</li>
+        <li>Zuschnitt von Holz nach Kundenwunsch</li>
+        <li>Teilnahme an diversen Verkaufsschulungen</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-date">11/2004 – 10/2006</div>
+      <div class="job-title">Produktionshelfer und Gabelstaplerfahrer, Valentin Furnierwerk, Villmar</div>
+    </div>
+
+    <div class="job">
+      <div class="job-date">10/2003 – 05/2004</div>
+      <div class="job-title">Maschinenführer und Gabelstaplerfahrer, Valentin Holzwerkstoffe, Witzenaar</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Berufliche Aus- und Fortbildung</h2>
+    <div class="job">
+      <div class="job-date">06/2003 – 07/2003</div>
+      <div class="job-title">Fortbildungslehrgang kaufmännischer Bereich, IHK, Herborn</div>
+      <p class="job-desc">Inkl. 4 Wöchiges Praktikum als Verkäufer, P & C, Gießen</p>
+    </div>
+    <div class="job">
+      <div class="job-date">08/1998 – 05/2003</div>
+      <div class="job-title">Ausbildung zum Groß- und Außenhandelskaufmann, Balzer + Nassau, Herborn</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Schulische Ausbildung</h2>
+    <div class="job">
+      <div class="job-date">08/1995 – 01/1998</div>
+      <div class="job-title">Hauptschulabschluss, Comenius Schule, Herborn</div>
     </div>
   </div>
 
@@ -128,5 +195,9 @@
     <p>Diverse Verkaufsschulungen und Kommunikationstraining</p>
   </div>
 
+  <div class="footer">
+    <p>© 2026 MT Business Solutions | Manuel Tetzlaff | Handelsfachwirt</p>
+  </div>
+</div>
 </body>
 </html>
